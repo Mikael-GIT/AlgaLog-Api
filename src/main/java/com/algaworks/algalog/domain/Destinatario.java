@@ -12,15 +12,15 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Cliente {
+public class Destinatario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String email;
-    private String telefone;
-    @OneToOne(mappedBy = "cliente")
+    private String logradouro;
+    private String numero;
+    private String complemento;
+    private String bairro;
+    @OneToOne(mappedBy = "destinatario")
     private Entrega entrega;
-
-
 }
