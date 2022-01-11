@@ -2,6 +2,7 @@ package com.algaworks.algalog.domain;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import com.algaworks.algalog.domain.enums.StatusEntrega;
 
@@ -16,5 +17,5 @@ public class Entrega {
     private Cliente cliente;
     private Destinatario destinatario;
     private StatusEntrega statusEntrega;
-    private Ocorrencia ocorrencia;
+    private List<Ocorrencia> ocorrencias;
 }
